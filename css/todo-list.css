@@ -1,11 +1,84 @@
-#container {
-    background: steelblue;
-    width: 360px;
-    margin: 0 auto;
-    border: 2px solid gray;
+body {
+    font-family: Roboto;
+    background: #4CA1AF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C4E0E5, #4CA1AF);
+}
+
+h1 {
+    background: #2890b9;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+input {
+    height: 40px;
+    font-size: 18px;
+    background: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    color: #2890b9;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+input:focus {
+    background: white;
+    border: 3px solid steelblue;
+    outline: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    height: 40px;
+    line-height: 40px;
+    background: white;
+}
+
+li:nth-child(2n) {
+    background: #f7f7f7;
+}
+
+li:hover span {
+    width: 40px;
+    transition: all 0.2s linear;
+    opacity: 1;
+}
+
+span {
+    background: red;
+    height: 40px;
+    width: 0;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    opacity: 0;
 }
 
 .completed {
     text-decoration: line-through;
     color: gray;
+}
+
+.fa-pencil {
+    float: right;
+}
+
+#container {
+    background: #f7f7f7;
+    width: 360px;
+    margin: 120px auto;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }

@@ -18,7 +18,11 @@ $("ul").on("click", "span", function(event) {
 $("#input").keypress(function(event) {
     // If the enter key is pressed
     if (event.which === 13) {
-        $("ul").append("<li><span>X</span>" + $(this).val() + "</li>");
+        $("ul").append("<li><span><i class=\"fa fa-times\"></i></span>" + $(this).val() + "</li>");
         $(this).val("");
     }
+})
+
+$(".fa-pencil").click(function() {
+    $("#input").slideToggle(500);
 })
